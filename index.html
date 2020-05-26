@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="app.js"></script>
+    <h1>Monthly Expense & Saving calculator</h1>
+    <form action="" id="form">
+        <p>
+            <label for="firstname">First Name: </label>
+            <input type="text" name="firstname" id="firstname" required>   
+        </p>
+        <p>
+            <label for="lastname">Last Name: </label>
+            <input type="text" name="lastname" id="lastname" required>
+        </p>
+        <p>
+            <label for="month">Select Month: </label>
+            <select name="month" id="month" required>
+                <option>- Month -</option>
+                <option value="January">January</option>
+                <option value="Febuary">Febuary</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+                </select>
+        </p>
+        <p>
+            <label for="income">Monthly Gross Income: </label>
+            <input type="number" name="income" id="income" required>
+        </p>
+        <p>
+            <label for="expense">Expense Amount: </label>
+            <input type="number" name="expense" id="expense" required>
+        </p>
+        <button type="submit">Calculate</button>
+        <button type="reset">Reset</button>
+    </form>
+    <section id="result">
+        <table id="table">
+            <thead>
+                <tr id="tr">
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Month</th>
+                    <th>Monthly Gross Income</th>
+                    <th>Expense Amount</th>
+                    <th>Total Saving</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                  </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+    </section>
+</body>
+</html>
